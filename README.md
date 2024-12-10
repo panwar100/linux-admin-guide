@@ -1,11 +1,10 @@
-# linux-admin-guide
-Linux Administration: Commands and Configuration Guide
+# Linux Administration: Commands and Configuration Guide
 This repository provides essential Linux commands and configurations for system management. It includes instructions on system targets, password recovery, job scheduling, and kickstart installation setup.
 
 # Table of Contents
 
 1.[Managing System Targets](#1-managing-system-targets)
-- [Switching Between Targets](#switching-between-targets)
+- [Switching Between Targets](#switching-between-targets)z
 - [Entering Rescue Mode](#entering-rescue-mode)
 - [Temporary Boot to Multi-User Target via GRUB](#temporary-boot-to-multi-user-target-via-grub)
 
