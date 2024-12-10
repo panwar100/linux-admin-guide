@@ -4,20 +4,20 @@ This repository provides essential Linux commands and configurations for system 
 # Table of Contents
 
 1.[Managing System Targets](#1-managing-system-targets)
-- [Switching Between Targets](#switching-between-targets)
-- [Entering Rescue Mode](#entering-rescue-mode)
-- [Temporary Boot to Multi-User Target via GRUB](#temporary-boot-to-multi-user-target-via-grub)
+- [Switching Between Targets](#a-switching-between-targets)
+- [Entering Rescue Mode](#b-entering-rescue-mode)
+- [Temporary Boot to Multi-User Target via GRUB](#c-temporary-boot-to-multi-user-target-via-grub)
 
-2.[Breaking Root Password](#breaking-root-password)
+2.[Breaking Root Password](#2-breaking-root-password)
 
 3.[Scheduling Tasks](#3-scheduling-tasks)
-- [One-Time Scheduling Using at](#one-time-scheduling-using-at)
-- [Recurring Scheduling Using crontab](#recurring-sheduling-using-crontab)
+- [One-Time Scheduling Using at](#a-one-time-scheduling-using-at)
+- [Recurring Scheduling Using crontab](#b-recurring-sheduling-using-crontab)
 
 4.[Kickstart Installation](#4-kickstart-installation)
-- [Configure FTP Server](#configure-ftp-server)
-- [Modify FTP Configuration](#modify-ftp-configuration)
-- [Perform Kickstart Installation](#perform-kickstart-installation)
+- [Configure FTP Server](#a-configure-ftp-server)
+- [Modify FTP Configuration](#b-modify-ftp-configuration)
+- [Perform Kickstart Installation](#c-perform-kickstart-installation)
 
 # 1. Managing System Targets
 ## a) Switching Between Targets
