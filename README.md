@@ -4,7 +4,7 @@ This repository provides essential Linux commands and configurations for system 
 # Table of Contents
 
 1.[Managing System Targets](#1-managing-system-targets)
-- [Switching Between Targets](#switching-between-targets)z
+- [Switching Between Targets](#switching-between-targets)
 - [Entering Rescue Mode](#entering-rescue-mode)
 - [Temporary Boot to Multi-User Target via GRUB](#temporary-boot-to-multi-user-target-via-grub)
 
