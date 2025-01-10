@@ -24,23 +24,37 @@ This repository provides essential Linux commands and configurations for system 
 
 Check the default target
 
-    systemctl get-default
+![Screenshot from 2025-01-10 23-09-08](https://github.com/user-attachments/assets/ec688a6f-beb7-4916-8161-a6bdaf34d1e0)
+
     
-Switch to multi-user target (CLI mode)
+Temporary Switch to multi-user target (CLI mode)
 
     systemctl isolate multi-user.target
+
+![Screenshot from 2025-01-10 23-11-55](https://github.com/user-attachments/assets/eab7549f-7b59-4b92-b0b6-b7553667764e)
+
 
  Return to the default target (graphical mode) and reboot
   
     init 6
 
+---
+
 Set multi-user target as the default
 
     systemctl set-default multi-user.target
 
+![Screenshot from 2025-01-10 23-17-30](https://github.com/user-attachments/assets/4f438ee6-85fc-4f74-9049-c357363b3223)
+
 Reboot to verify the new default
 
+![Screenshot from 2025-01-10 23-17-42](https://github.com/user-attachments/assets/ac4ecef4-e03c-40e3-9a3d-bf4c78e27668)
+
 The system will boot into multi-user mode by default.
+
+![Screenshot from 2025-01-10 23-18-20](https://github.com/user-attachments/assets/e14b1fec-b578-419b-bdcf-6c13dd1738be)
+
+---
 
 ## b) Entering Rescue Mode
 
@@ -53,11 +67,23 @@ Switch to rescue mode for system recovery:
 
 Restart the system and edit the GRUB entry during boot.
 
+![Screenshot from 2025-01-11 00-02-33](https://github.com/user-attachments/assets/046e9aac-3056-48ee-a966-f860ce108e3c)
+
+press e
+
+![Screenshot from 2025-01-10 23-56-25](https://github.com/user-attachments/assets/90e27aad-5adb-4fdc-ba0e-351a78f3c6af)
+
 Add the following to the kernel line:
 
      systemd.unit=multi-user.target
-     
+
+![Screenshot from 2025-01-10 23-57-55](https://github.com/user-attachments/assets/bfe8f9f3-62f2-4c16-9630-59b07fcfb985)
+
 Press Ctrl + X to boot.
+
+![Screenshot from 2025-01-10 23-58-25](https://github.com/user-attachments/assets/dc1bd6f3-b9f2-4a6e-bf3c-ed71b5de4e85)
+
+
 
 # 2. Breaking Root Password
 
