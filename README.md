@@ -163,24 +163,26 @@ Edit crontab for a specific user (e.g., tom):
 
 Install and start FTP server:
 
-    yum install vsftpd
-    systemctl start vsftpd.service
-    systemctl status vsftpd.service
+![Screenshot from 2025-01-10 21-03-41](https://github.com/user-attachments/assets/acbc74cb-f95f-4621-b557-8d7e3ad619c5)
+
+
+![Screenshot from 2025-01-10 21-02-39](https://github.com/user-attachments/assets/5a35bf98-234c-4dd3-a04d-b317f4687e89)
 
 Prepare the kickstart file:
 
-    cd /root
-    cp -rvf anaconda-ks.cfg /var/ftp/pub/
-    mv /var/ftp/pub/anaconda-ks.cfg /var/ftp/pub/new.cfg
+![Screenshot from 2025-01-10 21-10-39](https://github.com/user-attachments/assets/36b69a76-c0bb-4cb9-8b14-55efc76be386)
 
 Allow FTP through the firewall:
 
-    firewall-cmd --add-service=ftp --permanent
-    firewall-cmd --reload
+![Screenshot from 2025-01-10 21-12-48](https://github.com/user-attachments/assets/ab08f1fa-0503-44a7-ac3a-12a8ee200b41)
+
 
 Verify network connectivity:
 
-    nmcli con up ens160
+![Screenshot from 2025-01-10 21-14-46](https://github.com/user-attachments/assets/b3693193-bcd9-4fe4-ab2a-01dd22599371)
+
+![Screenshot from 2025-01-10 21-19-37](https://github.com/user-attachments/assets/766fbfb7-ae34-4f35-878c-6ce385f2b38b)
+
     
 ## b) Modify FTP Configuration
 
@@ -196,17 +198,26 @@ Update the following lines:
 
 Restart FTP service:
 
-     systemctl restart vsftpd.service
+![Screenshot from 2025-01-10 21-17-48](https://github.com/user-attachments/assets/8dd5a143-214c-4371-ade2-3c01eae9da3f)
+
 
 ## c) Perform Kickstart Installation
 
-Boot the new system and press Tab to edit the boot options.
+Boot the new system and press e to edit the boot options.
+
+![Screenshot from 2025-01-10 21-55-23](https://github.com/user-attachments/assets/967dbe58-c9bf-4003-8aa1-128e8d6a98b9)
+
+![Screenshot from 2025-01-10 21-55-50](https://github.com/user-attachments/assets/c52bbf33-a052-4e76-8d4b-67ff9e0dcf50)
+
 
 Add the following line to the kernel parameters:
 
-perl
-           
-           inst.ks=ftp://<server-IP>/pub/new.cfg
+![Screenshot from 2025-01-10 22-21-30](https://github.com/user-attachments/assets/5f4d9fc7-8bbe-4f21-a3c0-1b207c4f5e2f)
+
+![Screenshot from 2025-01-10 22-22-19](https://github.com/user-attachments/assets/3ded1764-eb5e-4bff-b2a5-7574f40f9867)
+
+![Screenshot from 2025-01-10 21-59-15](https://github.com/user-attachments/assets/490e4def-fcfb-4af3-850e-1da2266bdbc0)
+
 
 Start the installation.
 
